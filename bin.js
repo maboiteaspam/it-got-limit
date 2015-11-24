@@ -10,7 +10,7 @@ var itGotLimit = require('./index');
 
 process.stdin.setEncoding('utf8');
 
-var stream = itGotLimit(minimist.length && parseInt(minimist.length) || 2);
+var stream = itGotLimit(minimist.length && parseInt(minimist.length) || 2, true);
 
 byline(process.stdin).on('data', function(chunk) {
   if (chunk !== null) {
