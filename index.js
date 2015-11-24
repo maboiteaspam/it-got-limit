@@ -4,7 +4,7 @@ var got = require('got');
 
 var debug = require('debug')('it-got-limit');
 
-module.exports = function (limit, asEvent) {
+module.exports = function (limit, asStream) {
 
   asStream = !!asStream;
   limit = limit && parseInt(limit) || 2;
