@@ -11,12 +11,16 @@ with `got` http module.
 
 ## API
 
-It s a stream made with `through2`.
+It s a stream transform made with `through2`.
+
+You input url, it produces got object at given rate.
 
 ###### itGotLimit (limit, asStream)
 
 _limit_ : maximum number of simultaneous request.
+
 _asStream_ : receive data as a stream, or a callback (got.stream(url) || got(url).then(fn) )
+
 
 ```js
 var itGotLimit = require('it-got-limit');
