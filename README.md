@@ -60,3 +60,7 @@ stream.end()
 
 ```
 
+## Read More
+
+- https://github.com/sindresorhus/got
+- https://github.com/rvagg/through2
